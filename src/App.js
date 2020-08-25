@@ -45,13 +45,14 @@ function App() {
     CreatedTheatres.forEach((theatre) => scene.add(theatre));
     scene.add(makePointsFromData(data));
     getLights().forEach((light) => scene.add(light));
-    scene.add(createGlobe(50));
+    const globe = createGlobe(50);
+    scene.add(globe);
 
     const { onMouseMove, onMouseDown } = getPickingFunctions(
       camera,
       CreatedTheatres,
-      data,
-      controls
+      globe,
+      data
     );
     window.addEventListener("mousemove", onMouseMove, false);
     window.addEventListener("mousedown", onMouseDown, false);
