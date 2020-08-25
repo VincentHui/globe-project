@@ -6,6 +6,7 @@
  * @author erich666 / http://erichaines.com
  * @author ScieCode / http://github.com/sciecode
  */
+//this file is taken from the three.js example page/repo at the link underneath
 //https://github.com/mrdoob/three.js/blob/89438bb39cde275ed1024fdb527b3ed75bdae68b/examples/jsm/controls/OrbitControls.js
 import {
   EventDispatcher,
