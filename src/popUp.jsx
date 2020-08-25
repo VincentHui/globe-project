@@ -81,6 +81,8 @@ const TheatrePick = (props) => {
   return (
     <TheatrePickContainer style={styleProps} picked={picked ? 1 : 0}>
       <TitleDiv>{theatre.theaterName}</TitleDiv>
+      <TitleDiv>lat : {Number.parseFloat(theatre.lat).toFixed(5)}</TitleDiv>
+      <TitleDiv>lon : {Number.parseFloat(theatre.lon).toFixed(5)}</TitleDiv>
     </TheatrePickContainer>
   );
 };
