@@ -3,7 +3,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Globe Project
 
 ![screenshot](https://git-repo-img.s3.eu-west-2.amazonaws.com/globe-project.png)
-**THIS RUNS BEST ON A DESKTOP NOT MOBILE DEVICE**
 
 This application maps longitue and latitude information for imaginary theatres from a JSON file and expresses it in a cool 3D visualisation in the browser. It uses the package `three` for the 3D rendering logic used in the popular three.js library, `styled-components` for css in js and `react-spring` for physics based animation for react. You can check it out [here](https://globe-project.surge.sh/) hosted on surge if you don't feel like building the project.
 
