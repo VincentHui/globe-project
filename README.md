@@ -8,5 +8,5 @@ This application maps longitue and latitude information for imaginary theatres f
 
 # Starting the project
 
-Use yarn to install packages with the command `yarn install` and then start the application using `yarn start`. The applications controls is based off the three js `orbitControl.js` logic, so click and drag the scene to rotate and use the mouse wheel to zoom in and out. The stylised globe is studded with little gren theaters and when clicking them it will display some info about the theatre.
+Use yarn to install packages with the command `yarn install` and then start the application using `yarn start`. The applications controls is based off the three js `orbitControl.js` logic, so click and drag the scene to rotate and use the mouse wheel to zoom in and out. The stylised globe is studded with little green theaters and when clicking them it will display some info about the theatre.
 
