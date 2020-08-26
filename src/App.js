@@ -48,7 +48,7 @@ function App() {
     const globe = createGlobe(50);
     scene.add(globe);
 
-    const { onMouseMove, onMouseDown } = getPickingFunctions(
+    const { onMouseMove, onMouseDown, onTouchStart } = getPickingFunctions(
       camera,
       CreatedTheatres,
       globe,
@@ -56,6 +56,7 @@ function App() {
     );
     window.addEventListener("mousemove", onMouseMove, false);
     window.addEventListener("mousedown", onMouseDown, false);
+    window.addEventListener("touchstart", onTouchStart, false);
 
     const animate = () => {
       requestAnimationFrame(animate);

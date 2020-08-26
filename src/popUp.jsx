@@ -27,7 +27,7 @@ const InnerContainer = styled.div`
 const TitleDiv = styled.div`
   padding: 15px;
   border-left: 2px solid white;
-  width: 120px;
+  text-align: initial;
   user-select: none;
   font-size: ${(props) => props.fontSize}px;
 `;
@@ -93,6 +93,7 @@ const Intro = (props) => {
       ? "rotateY(0) translate3d(0px, 0px, 0px) "
       : "rotateY(90deg) translate3d(200px, 0px, 0px) ",
     opacity: props.intro ? 1 : 0,
+
     from: {
       transform: "rotateY(90deg) translate3d(-200px, 0px, 0px) ",
       opacity: 0,
@@ -104,9 +105,9 @@ const Intro = (props) => {
   });
   return (
     <animated.div style={transform}>
-      <TitleDiv fontSize={30}>Good</TitleDiv>
-      <TitleDiv fontSize={30}>Theatres</TitleDiv>
-      <TitleDiv fontSize={30}>Here</TitleDiv>
+      <TitleDiv fontSize={20}>Good</TitleDiv>
+      <TitleDiv fontSize={20}>Theatres</TitleDiv>
+      <TitleDiv fontSize={20}>Here</TitleDiv>
     </animated.div>
   );
 };
